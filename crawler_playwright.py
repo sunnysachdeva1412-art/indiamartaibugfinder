@@ -176,13 +176,23 @@ class EnhancedCrawler:
         queue = [(start_url, 0)]
 
         async with async_playwright() as pw:
-            browser = await pw.chromium.launch(
-                headless=self.headless,
-                args=[
-                    "--disable-blink-features=AutomationControlled",
-                    "--no-sandbox", "--disable-setuid-sandbox",
-                    "--disable-dev-shm-usage", "--disable-gpu",
-                    "--window-size=1280,800",
+           browser = await pw.chromium.launch(
+    headless=True,
+    executable_path="/usr/bin/chromium",
+    args=[
+        "--disable-blink-features=AutomationControlled",
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-gpu",
+        "--disable-software-rasterizer",
+        "--disable-extensions",
+        "--disable-background-networking",
+        "--disable-sync",
+        "--disable-default-apps",
+        "--disable-popup-blocking",
+        "--disable-notifications",
+        "--window-size=1280,800"
                 ],
             )
 
