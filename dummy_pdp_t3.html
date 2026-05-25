@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AC Repair Service - Buy at Best Price | IndiaMART</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;font-size:13px;color:#212121;background:#f5f5f5}
+a{color:#1a73e8;text-decoration:none}
+a:hover{text-decoration:underline}
+.hdr{background:#fff;border-bottom:3px solid #c5261e;position:sticky;top:0;z-index:200;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.hdr-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:8px 16px}
+.logo-a{flex-shrink:0}
+.logo-svg{width:130px;height:40px}
+.hdr-search{flex:1;display:flex;border:2px solid #c5261e;border-radius:3px;overflow:hidden;height:42px}
+.hdr-search input[type=search]{flex:1;border:none;outline:none;padding:0 14px;font-size:14px;font-family:Arial}
+.hdr-sbtn{background:#c5261e;border:none;padding:0 18px;cursor:pointer;display:flex;align-items:center}
+.hdr-sbtn svg{fill:#fff;width:18px;height:18px}
+.hdr-nav{display:flex;gap:14px;align-items:center;font-size:12px;flex-shrink:0}
+.hdr-nav a{color:#333;font-weight:500}
+.sell-btn{background:#c5261e;color:#fff!important;padding:7px 14px;border-radius:3px;font-weight:600}
+.bc{background:#fff;border-bottom:1px solid #e8e8e8;padding:0 16px;font-size:11px;color:#757575}
+.bc-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;height:32px}
+.bc-inner a{color:#1a73e8;padding:0 3px}
+.bc-sep{color:#bbb;padding:0 2px}
+.pdp-wrap{max-width:1280px;margin:16px auto;padding:0 16px;display:flex;gap:20px}
+/* LEFT: seller panel (T3 style) */
+.left-panel{width:260px;flex-shrink:0}
+.seller-card{background:#fff;border:1px solid #e8e8e8;border-radius:4px;padding:16px;margin-bottom:12px}
+.co-link{font-size:14px;font-weight:700;color:#1a73e8;margin-bottom:3px;display:block}
+.co-loc{font-size:12px;color:#9e9e9e;margin-bottom:8px}
+.trust-row{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.yrs{background:#f3e5f5;color:#6a1b9a;border:1px solid #ce93d8;padding:2px 8px;border-radius:2px;font-size:10px}
+.rating{font-size:12px;color:#e65100}
+.resp{font-size:11px;color:#9e9e9e}
+.gst-row{font-size:11px;color:#555;margin-bottom:10px}
+.ctas{display:flex;flex-direction:column;gap:8px}
+/* FUNCTIONAL BUG 1: Call Now disabled */
+.btn-call{display:flex;align-items:center;justify-content:center;gap:6px;padding:9px;border:1px solid #c5261e;border-radius:3px;background:#fff;font-size:13px;font-weight:600;color:#c5261e;cursor:pointer;pointer-events:none}
+.btn-call svg{fill:#c5261e;width:15px;height:15px}
+/* FUNCTIONAL BUG 2: Contact Supplier disabled */
+.btn-contact{display:flex;align-items:center;justify-content:center;padding:9px;border:1px solid #c5261e;border-radius:3px;background:#c5261e;font-size:13px;font-weight:600;color:#fff;cursor:pointer}
+/* CENTRE: product info */
+.info-col{flex:1;min-width:0}
+.info-card{background:#fff;border:1px solid #e8e8e8;border-radius:4px;padding:20px;margin-bottom:12px}
+.prod-title{font-size:20px;font-weight:700;color:#212121;margin-bottom:6px}
+/* UI BUG 1: Price ₹ 0 */
+.prod-price{font-size:20px;font-weight:700;color:#c5261e;margin-bottom:14px}
+.prod-price .unit{font-size:13px;color:#757575;font-weight:400}
+.get-price-btn{display:inline-flex;align-items:center;gap:6px;background:#c5261e;color:#fff;border:none;padding:10px 24px;border-radius:3px;font-size:14px;font-weight:600;cursor:pointer;margin-bottom:16px}
+.spec-table{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:14px}
+.spec-table tr{border-bottom:1px solid #f0f0f0}
+.spec-table td{padding:8px 10px}
+.spec-table td:first-child{color:#757575;width:40%;background:#fafafa;font-weight:500}
+.prod-desc{font-size:13px;color:#555;line-height:1.7;margin-bottom:14px}
+/* Related categories */
+.related-sec{background:#fff;border:1px solid #e8e8e8;border-radius:4px;padding:16px;margin-bottom:12px}
+.sec-title{font-size:14px;font-weight:700;margin-bottom:12px}
+.rel-grid{display:flex;flex-wrap:wrap;gap:8px}
+.rel-chip{padding:5px 14px;border:1px solid #e0e0e0;border-radius:20px;font-size:12px;color:#333;background:#fafafa}
+/* BL form — present */
+.bl-box{background:#fff;border:1px solid #e8e8e8;border-radius:4px;padding:16px;margin-bottom:12px}
+.bl-title{font-size:14px;font-weight:700;margin-bottom:4px}
+.bl-sub{font-size:12px;color:#757575;margin-bottom:12px}
+.bl-row{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start}
+.bl-textarea{flex:1;min-width:180px;padding:8px;border:1px solid #ddd;border-radius:3px;font-size:12px;font-family:Arial;resize:none;height:50px;outline:none}
+.bl-phone{padding:8px;border:1px solid #ddd;border-radius:3px;font-size:12px;width:140px;outline:none}
+.bl-btn{background:#c5261e;color:#fff;border:none;padding:9px 18px;border-radius:3px;font-size:13px;font-weight:700;cursor:pointer}
+/* Q&A collapsed UI BUG 2 */
+.qa-sec{background:#fff;border:1px solid #e8e8e8;border-radius:4px;padding:16px;margin-bottom:12px;max-height:46px;overflow:hidden;position:relative}
+.qa-sec::after{content:'';position:absolute;bottom:0;left:0;right:0;height:20px;background:linear-gradient(transparent,#fff)}
+.qa-title{font-size:14px;font-weight:700;margin-bottom:10px}
+.qa-item{margin-bottom:8px;font-size:12px}
+.qa-q{font-weight:600;margin-bottom:2px}
+.qa-a{color:#555;line-height:1.6;padding-left:10px}
+.footer{background:#222;color:#aaa;padding:28px 16px 16px;margin-top:20px}
+.ft-inner{max-width:1280px;margin:0 auto}
+.ft-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;margin-bottom:20px}
+.ft-col h4{color:#fff;font-size:12px;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.ft-col a{display:block;color:#888;margin-bottom:5px;font-size:11px}
+.ft-bottom{border-top:1px solid #444;padding-top:12px;font-size:11px;color:#666}
+</style>
+</head>
+<body>
+<div class="hdr">
+  <div class="hdr-inner">
+    <a href="https://www.indiamart.com" class="logo-a">
+      <svg class="logo-svg" viewBox="0 0 130 40"><rect width="130" height="40" rx="3" fill="#c5261e"/><text x="8" y="27" font-family="Arial" font-size="18" font-weight="800" fill="#fff">india<tspan fill="#ffcc80">MART</tspan></text></svg>
+    </a>
+    <div class="hdr-search">
+      <input type="search" placeholder="Search for products, suppliers and exporters">
+      <button class="hdr-sbtn" type="button"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
+    </div>
+    <div class="hdr-nav"><a href="#">Help</a><a href="#">My IndiaMART</a><a href="#" class="sell-btn">Sell Online</a></div>
+  </div>
+</div>
+<div class="bc">
+  <div class="bc-inner">
+    <a href="https://www.indiamart.com">IndiaMART</a><span class="bc-sep">›</span>
+    <a href="https://dir.indiamart.com/impcat/ac-repair-service.html">AC Repair Service</a><span class="bc-sep">›</span>
+    <a href="https://dir.indiamart.com/impcat/air-conditioner-repair.html">Air Conditioner Repair</a><span class="bc-sep">›</span>
+    <span>AC Repair &amp; Installation Service</span>
+  </div>
+</div>
+<div class="pdp-wrap">
+  <!-- LEFT SELLER PANEL (T3) -->
+  <div class="left-panel">
+    <div class="seller-card">
+      <a href="https://www.indiamart.com/cooltech-services/" class="co-link">CoolTech Services</a>
+      <div class="co-loc">Pune, Maharashtra</div>
+      <div class="gst-row">GST: 27****1Z8</div>
+      <div class="trust-row">
+        <span class="yrs">7 yrs</span>
+        <span class="rating">★ 4.4 (198)</span>
+        <span class="resp">Response: 87%</span>
+      </div>
+      <div class="ctas">
+        <!-- FUNCTIONAL BUG 1: Call Now disabled -->
+        <div class="btn-call" aria-disabled="true" style="pointer-events:none;">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.36 11.36 0 003.48.69 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.16.24 2.36.69 3.48a1 1 0 01-.27 1.11z"/></svg>
+          Call Now
+        </div>
+        <!-- FUNCTIONAL BUG 2: Contact Supplier disabled -->
+        <button class="btn-contact" type="button" disabled aria-disabled="true">Contact Supplier</button>
+      </div>
+    </div>
+  </div>
+  <!-- CENTRE INFO (T3) -->
+  <div class="info-col">
+    <div class="info-card">
+      <div class="prod-title">AC Repair &amp; Installation Service</div>
+      <!-- UI BUG 1: Price ₹ 0 -->
+      <div class="prod-price">₹ 0 <span class="unit">/ Visit</span></div>
+      <button class="get-price-btn" type="button">Get Latest Price</button>
+      <table class="spec-table">
+        <tr><td>Service Type</td><td>Repair, Installation, Servicing</td></tr>
+        <tr><td>AC Type</td><td>Split, Window, Cassette, Central</td></tr>
+        <tr><td>Location</td><td>Pune, Mumbai, Nashik</td></tr>
+        <tr><td>Availability</td><td>Mon–Sat, 9 AM – 7 PM</td></tr>
+        <tr><td>Warranty</td><td>30 Days Service Warranty</td></tr>
+        <tr><td>GST No.</td><td>27FGHIJ5678K1Z2</td></tr>
+      </table>
+      <div class="prod-desc">Professional AC repair and installation service for all major brands. Our trained technicians handle split, window, and cassette AC units. Same-day service available in Pune. Gas refilling, PCB repair, compressor replacement all covered.</div>
+    </div>
+    <!-- BL Form present + prefilled -->
+    <div class="bl-box">
+      <div class="bl-title">Tell us what you need</div>
+      <div class="bl-sub">Describe your requirement to get best quotes from verified suppliers</div>
+      <div class="bl-row">
+        <textarea class="bl-textarea">AC Repair Service</textarea>
+        <input class="bl-phone" type="tel" placeholder="Enter Mobile Number">
+        <button class="bl-btn" type="button">Send Enquiry for AC Repair Service</button>
+      </div>
+    </div>
+    <!-- Related categories -->
+    <div class="related-sec">
+      <div class="sec-title">Related Categories</div>
+      <div class="rel-grid">
+        <a href="/impcat/refrigerator-repair.html" class="rel-chip">Refrigerator Repair</a>
+        <a href="/impcat/washing-machine-repair.html" class="rel-chip">Washing Machine Repair</a>
+        <a href="/impcat/hvac-services.html" class="rel-chip">HVAC Services</a>
+        <a href="/impcat/electrical-services.html" class="rel-chip">Electrical Services</a>
+      </div>
+    </div>
+    <!-- Q&A collapsed UI BUG 2 -->
+    <div class="qa-sec">
+      <div class="qa-title">Have a Question? Ask our expert</div>
+      <div class="qa-item"><div class="qa-q">Q: How long does AC installation take?</div><div class="qa-a">A: Standard split AC installation takes 2-3 hours depending on the unit type.</div></div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="ft-inner">
+    <div class="ft-grid">
+      <div class="ft-col"><h4>About IndiaMART</h4><a href="#">About Us</a><a href="#">Careers</a></div>
+      <div class="ft-col"><h4>Help &amp; Support</h4><a href="#">Help Center</a><a href="#">Contact Us</a></div>
+      <div class="ft-col"><h4>Legal</h4><a href="#">Terms of Use</a><a href="#">Privacy Policy</a></div>
+      <div class="ft-col"><h4>For Buyers</h4><a href="#">How to Buy</a></div>
+      <div class="ft-col"><h4>For Sellers</h4><a href="#">Sell on IndiaMART</a></div>
+    </div>
+    <div class="ft-bottom">© 2024 IndiaMART InterMESH Ltd. All Rights Reserved.</div>
+  </div>
+</div>
+</body>
+</html>

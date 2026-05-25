@@ -1,0 +1,20 @@
+# Set API key
+$env:ANTHROPIC_API_KEY="sk-ant-..."
+
+# Run on any URL
+C:/Users/Sunny/AppData/Local/Programs/Python/Python314/python.exe scanner.py --url "https://dir.indiamart.com/"
+
+# Watch the browser (useful for debugging)
+C:/Users/Sunny/AppData/Local/Programs/Python/Python314/python.exe scanner.py --url "https://dir.indiamart.com/" --show-browser
+
+# Save report to a custom folder
+C:/Users/Sunny/AppData/Local/Programs/Python/Python314/python.exe scanner.py --url "https://dir.indiamart.com/" --out-dir "C:\Users\Sunny\reports"
+
+
+ C:/Users/Sunny/AppData/Local/Programs/Python/Python314/python.exe main.py --url "https://dir.indiamart.com/"
+
+
+You are a AI QA manager and you have to click all links cta on page and give output as how many links pass and how many fail
+
+$env:ANTHROPIC_API_KEY="sk-3vZa8a6kJIIl61oy7G7POA"
+C:/Users/Sunny/AppData/Local/Programs/Python/Python314/python.exe main.py --url "https://www.indiamart.com/proddetail/sitagliptin-100-dapagliflozin-10-2857765645173.html?pos=2"

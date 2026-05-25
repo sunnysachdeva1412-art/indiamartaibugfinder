@@ -1,0 +1,8 @@
+flask
+flask-cors
+playwright
+requests
+beautifulsoup4
+pillow
+anthropic
+gunicorn
