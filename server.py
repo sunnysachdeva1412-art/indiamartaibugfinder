@@ -640,7 +640,7 @@ if __name__ == "__main__":
 ╔══════════════════════════════════════════════════════╗
 ║  IndiaMART Bug Finder AI Agent — v5                 ║
 ║  Real QA · Functional & UI · Web Vitals             ║
-║  Open → http://localhost:5000                        ║
+║  Railway Deployment Mode                             ║
 ╚══════════════════════════════════════════════════════╝
 """)
-    app.run(host="0.0.0.0", port=5000, debug=False, threaded=True)
+    app.run(host="0.0.0.0", port=8080, debug=False, threaded=True)

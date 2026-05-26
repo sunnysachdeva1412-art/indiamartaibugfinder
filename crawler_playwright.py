@@ -183,7 +183,15 @@ class EnhancedCrawler:
         "--disable-blink-features=AutomationControlled",
         "--no-sandbox",
         "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",browser = await pw.chromium.launch(
+    headless=True,
+    args=[
+        "--no-sandbox",
         "--disable-dev-shm-usage",
+        "--disable-gpu",
+        "--disable-setuid-sandbox"
+    ]
+)
         "--disable-gpu",
         "--disable-software-rasterizer",
         "--disable-extensions",
