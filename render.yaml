@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: indiamartaibugfinder
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false          # Render will prompt you to fill this in the dashboard
+    healthCheckPath: /
+    autoDeploy: true

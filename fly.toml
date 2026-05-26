@@ -1,0 +1,17 @@
+app = "indiamartaibugfinder"
+primary_region = "sin"   # Singapore — closest to India
+
+[build]
+  dockerfile = "Dockerfile"
+
+[http_service]
+  internal_port = 8080
+  force_https   = true
+  auto_stop_machines  = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[vm]]
+  memory = "1gb"      # Playwright + Chromium needs at least 512 MB; 1 GB recommended
+  cpu_kind = "shared"
+  cpus = 1

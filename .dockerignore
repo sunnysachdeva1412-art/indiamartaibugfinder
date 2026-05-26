@@ -1,6 +1,11 @@
 .git
 __pycache__
 *.pyc
+*.pyo
+*.pyd
+.env
+web_output
 node_modules
 playwright-report
 test-results
+*.txt.bak
