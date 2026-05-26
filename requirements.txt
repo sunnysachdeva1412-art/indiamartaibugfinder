@@ -1,23 +1,8 @@
-C:\Users\Sunny> CD C:\Users\Sunny\ai_test_runner
-
-PS C:\Users\Sunny\ai_test_runner> python app.py
-
-http://127.0.0.1:5000
-
-integrated_app
-
-CD C:\Users\Sunny\SS\integrated_app
-
-
-python integrated_app.py
-# Open: http://localhost:5000
-
-sk-DK93Ug-4PFk_hLZlXEECFw
-
-
-
-CD C:\Users\Sunny\SS\qa_platform
-
-
-cd C:\Users\Sunny\Downloads\qa_platform
-python indiamart_qa.py
+flask
+flask-cors
+playwright
+requests
+beautifulsoup4
+pillow
+anthropic
+gunicorn
